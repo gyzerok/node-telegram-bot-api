@@ -16,6 +16,5 @@ lib-doc/
 .eslintrc
 .eslintignore
 .editorconfig
-.babelrc
 .gitignore
 .git
