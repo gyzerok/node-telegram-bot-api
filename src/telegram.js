@@ -186,6 +186,14 @@ class TelegramBot extends EventEmitter {
     return this._request(_path);
   }
 
+  getChat(chatId) {
+    const form = {
+      chat_id: chatId
+    };
+
+    return this._request('getChat', { form });
+  }
+
   /**
    * Specify an url to receive incoming updates via an outgoing webHook.
    * @param {String} url URL where Telegram will make HTTP Post. Leave empty to
